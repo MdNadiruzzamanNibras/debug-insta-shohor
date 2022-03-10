@@ -124,7 +124,7 @@ const createPost = (post) => {
                       
                           ${post.comments[0]?.user}
                       </a>
-                      ${post.comments?.text}
+                      ${post.comments[0]?.text}
                     </small>
                   </div>
                   <span class="post__date-time">30 minutes ago</span>
