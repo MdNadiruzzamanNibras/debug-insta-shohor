@@ -53,7 +53,7 @@ const switchTab = (id) => {
 const createPost = (post) => {
  
     const image = post.image;
-    console.log(post)
+ 
     const div = document.createElement( "article" );
     div.classList.add( "post" );
     div.innerHTML = `
@@ -155,7 +155,8 @@ const displayLikedPosts = () => {
 
 const displayReportedPosts = () => {
     const reportedPosts = getReportedPosts();
-    posts.forEach((post) => {
+    
+    reportedPosts.forEach((post) => {
         const div = createPost(post);
         document.getElementById( "reported" ).appendChild(div);
     });
